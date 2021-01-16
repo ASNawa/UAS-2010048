@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Transaksi Penjualan</title>
+  <style> {font-family: 'Calibri';
+    }
+    td{padding: 2px 20px;}
+    .hasil{display: none;}
+    #submit{margin: 50px 150px;}
+  </style>
+</head>
+
+
+<body>
+  <h2>PEMESANAN TIKET PENERBANGAN</h2>
+
+  <form onsubmit="return false">
+    <table>
+      <tr>
+        <td>NAMA</td>
+        <td><input type="text" id="nama" autocomplete="off"></td>
+      </tr>
+      <tr>
+        <td>JUMLAH</td>
+        <td><input type="text" id="jumlah" autocomplete="off"></td>
+      </tr>
+      <tr>
+        <td>KELAS</td>
+        <td>
+          <select name="kelas" id="kelas">
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Bisnis">Bisnis</option>
+            <option value="Eksekutif">Eksekutif</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>TUJUAN</td>
+        <td>
+          <select name="tujuan" id="tujuan">
+            <option value="Bali">Bali</option>
+            <option value="Lombok">Lombok</option>
+            <option value="Surabaya">Surabaya</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>BAGASI</td>
+        <td>
+          <label><input type="radio" name="bagasi" value="5kg" id="pria">5kg</label>
+          <label><input type="radio" name="bagasi" value="10kg" id="wanita">10kg</label>
+          <label><input type="radio" name="bagasi" value="15kg" id="wanita">15kg</label>
+        </td>
+      </tr>
+      <tr>
+        <td>ASURANSI</td>
+        <td>
+          <label><input type="checkbox" name="asuransi" value="1000000"> Asuransi Jiwa</label><br>
+          <label><input type="checkbox" name="asuransi" value="2000000"> Asuransi Kecelakaan</label><br>
+          <label><input type="checkbox" name="asuransi" value="3000000"> Asuransi Keterlambatan</label>
+        </td>
+      </tr>
+    </table>
+    <button id="submit" type="submit">submit</button>
+    </form>
+    <div class="hasil">
+      <hr>
+
+      <h3>PEMESAN</h3>
+      
+      <table>
+        <tr>
+          <td>Nama Pemesan</td>
+          <td>:</td>
+          <td id="h-nama"></td>
+        </tr>
+        <tr>
+          <td>Jumlah</td>
+          <td>:</td>
+          <td id="h-jumlah"></td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>:</td>
+          <td id="h-kelas"></td>
+        </tr>
+        <tr>
+          <td>Tujuan</td>
+          <td>:</td>
+          <td id="h-tujuan"></td>
+        </tr>
+        <tr>
+          <td>Bagasi</td>
+          <td>:</td>
+          <td id="h-bagasi"></td>
+        </tr>
+        <tr>
+          <td>Asuransi</td>
+          <td>:</td>
+          <td id="h-asuransi"></td>
+        </tr>
+        <tr>
+          <td>Total Harga</td>
+          <td>:</td>
+          <td id="h-Total"></td>
+        </tr>
+      </table>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
